@@ -1,0 +1,14 @@
+Refactor the type "Duck" that contains the following data:
+
+- Type:DuckType
+- CanFly:bool
+- Sound:string
+- Climate:Climate
+
+
+Acceptance criteria:
+
+- no explicitly defined properties
+- needs to inherit from Bird
+- two ducks are equal if properties are equal
+- unit tests all pass

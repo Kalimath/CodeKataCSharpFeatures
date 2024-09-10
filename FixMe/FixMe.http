@@ -1,0 +1,6 @@
+@FixMe_HostAddress = http://localhost:5047
+
+GET {{FixMe_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
