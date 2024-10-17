@@ -1,7 +1,6 @@
-using System.Collections;
 using StaticData;
 
-namespace Collections;
+namespace Collection;
 
 /// <summary>
 /// Large congregation of individuals of one or more species of birds
@@ -22,8 +21,7 @@ public abstract class BirdGatheringPlace(string name)
         foreach (var bird in arrivingBirds) AddBird(bird); //FYI: this is not correct for the exercise
     }
     
-    public virtual Bird? GetFirstArrivedBird() => Birds.FirstOrDefault() ?? null; //FYI: this is not correct for the exercise
-    public virtual Bird? GetLastArrivedBird() => Birds.LastOrDefault()?? null; //FYI: this is not correct for the exercise
+    public Bird[] GetBirds() => Birds.ToArray();
     
     public int GetBirdCount => Birds.Count;
 }

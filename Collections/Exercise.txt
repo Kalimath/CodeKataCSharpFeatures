@@ -1,8 +1,0 @@
-In the class "Tree" override the methods from the base class "BirdGatheringPlace"
-
-Acceptance criteria:
-
-- Methods from the collection class like Add,AddRange,Length,... are not allowed
-- No LINQ (so no FirstOrDefault, Last,...)
-- Tests are green
-- Implementations and tests make use of the new Collection expressions or List patters features
