@@ -2,5 +2,5 @@ namespace Validation.Validators.Base;
 
 public interface ILicenseValidator
 {
-    public string[] Validate(string licensePlate);
+    public ValidationResult Validate(string licensePlate);
 }

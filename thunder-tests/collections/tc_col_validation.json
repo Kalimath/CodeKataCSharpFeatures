@@ -1,0 +1,26 @@
+{
+    "_id": "7da2fdaf-e7f5-4b27-a0d3-6d4e5527ee09",
+    "colName": "Validation",
+    "created": "2024-09-10T14:49:01.602Z",
+    "sortNum": 10000,
+    "folders": [],
+    "requests": [
+        {
+            "_id": "0dc349e5-8bd5-4d5b-a16c-c8a1c60961c4",
+            "colId": "7da2fdaf-e7f5-4b27-a0d3-6d4e5527ee09",
+            "containerId": "",
+            "name": "Register Car",
+            "url": "http://localhost:5191/carcenter/fleet/register",
+            "method": "POST",
+            "sortNum": 10000,
+            "created": "2024-09-10T14:49:12.201Z",
+            "modified": "2024-09-10T14:49:52.273Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\r\n  \"licensePlate\": \"HLR-\"\r\n}",
+                "form": []
+            }
+        }
+    ]
+}

@@ -1,8 +1,8 @@
-Try to implement the validation method for Type 7 Belgian numberplates.
+Try to implement the validation method 'IsType7' in the 'BelgianLicenseValidator'.
 
 Acceptance criteria:
 
-- try to re-use as much existing fuctions (you can find them in the static StringValidators class)
+- try to re-use as much existing functions (you can find them in the static StringValidators class)
 - Name new String-functions in a way that they are reusable in another context
 
 Tips:

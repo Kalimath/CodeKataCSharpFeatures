@@ -1,8 +1,6 @@
-using Validation.Validators.Base;
-
 namespace Validation.Validators;
 
-public static class LicenseValidators
+public static class StringValidators
 {
     public static readonly Func<string, bool> NotEmpty = s =>
     {
@@ -64,33 +62,6 @@ public static class LicenseValidators
         LogCall(nameof(FourthCharIsDash));
         return IsDash(s.Substring(3, 1));
     };
-    
-    
-    public static readonly Func<string, bool> IsBelgianLicensePlateOfType6 = plate =>
-    {
-        var earlierType6Conditions = new[]
-        {
-            NotEmpty,
-            IsLength7,
-            First3CharsAreAlphabetic,
-            FourthCharIsDash,
-            Last3CharsAreNumeric
-        };
 
-        var laterType6Conditions = new[]
-        {
-            NotEmpty,
-            IsLength7,
-            First3CharsAreNumeric,
-            Last3CharsAreAlphabetic,
-            FourthCharIsDash
-        };
-        
-        var isEarlierType6 = plate.Validate(earlierType6Conditions);
-        var isLaterType6 = plate.Validate(laterType6Conditions); 
-        
-        return isEarlierType6 || isLaterType6;
-    };
-    
-    public static void LogCall(string methodName) => Console.WriteLine($"Calling {methodName}");
+    private static void LogCall(string methodName) => Console.WriteLine($"Calling {methodName}");
 }

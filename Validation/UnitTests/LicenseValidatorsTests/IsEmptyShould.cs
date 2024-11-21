@@ -1,7 +1,7 @@
 using Xunit;
-using static Validation.Validators.LicenseValidators;
+using static Validation.Validators.StringValidators;
 
-namespace Validation.UnitTests.StringValidatorsTests;
+namespace Validation.UnitTests.LicenseValidatorsTests;
 
 public class IsEmptyShould
 {

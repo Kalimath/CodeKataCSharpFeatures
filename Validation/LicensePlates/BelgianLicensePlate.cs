@@ -1,9 +1,15 @@
-using StaticData;
+using Validation.Validators;
 
 namespace Validation.LicensePlates;
 
-public class BelgianLicensePlate(string value, BasicBelgianNumberplateType type) : LicensePlate(value)
+public class BelgianLicensePlate : LicensePlate
 {
-    public BasicBelgianNumberplateType Type { get; } = type;
+    public BelgianLicensePlate(string value, BasicBelgianLicenseType type) : base(value)
+    {
+        Type = type;
+        if (!this.IsValidBelgianLicensePlate()) //TODO: try checking with Bram how to implement the IValidatableObject logic instead
+            throw new ArgumentException("Invalid Belgian license plate");
+    }
 
+    public BasicBelgianLicenseType Type { get; }
 }
